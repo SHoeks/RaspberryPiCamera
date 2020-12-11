@@ -4,16 +4,6 @@
 
 These are options to help save battery life on the Raspberry Pi Zero with PiJuice
 
-Turn OFF USB chip
-```bash
-echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/unbind
-```
-
-Turn ON USB chip
-```bash
-echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/bind
-```
-
 Turn OFF HDMI output
 ```bash
 sudo /opt/vc/bin/tvservice -o
@@ -30,6 +20,14 @@ Turn off Bluetooth: add following line to /boot/config.txt
 ```bash
 dtoverlay=pi3-disable-bt
 ```
+
+Turn off leds: add following lines to /boot/config.txt
+
+```bash
+dtparam=act_led_trigger=none
+dtparam=act_led_activelow=on
+```
+
 
 ## Python script for taking pictures
 
