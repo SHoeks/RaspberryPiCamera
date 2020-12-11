@@ -25,6 +25,12 @@ Turn ON HDMI output
 sudo /opt/vc/bin/tvservice -p
 ```
 
+Turn off Bluetooth: add following line to /boot/config.txt
+
+```bash
+dtoverlay=pi3-disable-bt
+```
+
 ## Python script for taking pictures
 
 Script is used to take picture on button press using pin 18 and ground: http://razzpisampler.oreilly.com/ch07.html
