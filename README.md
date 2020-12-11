@@ -21,5 +21,4 @@ Turn ON HDMI output
 
 ```bash
 sudo /opt/vc/bin/tvservice -p
-Total = 4hrs 11mins
 ```
