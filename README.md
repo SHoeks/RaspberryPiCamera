@@ -55,4 +55,15 @@ while True:
 ```
 saved in /home/pi/Documents/TakePicturePiCam.py.
 
+## Start python script at boot 
+
+```bash
+sudo crontab -e
+```
+
+Add the following line:
+
+```bash
+@reboot sudo python /home/pi/Documents/TakePicturePiCam.py
+```
 
